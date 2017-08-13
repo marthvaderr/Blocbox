@@ -1,44 +1,259 @@
-body{
-  overflow-x: hidden;
-  font-family: "Montserrat" ,Helvetica, Arial, Sans-serif;
-  color: #333333;
+body {
+  color       : #333333;
+  overflow-x  : hidden;
+  font-family : "Montserrat",
+                Helvetica,
+                Arial,
+                Sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family : "Montserrat",
+                Helvetica,
+                Arial,
+                sans-serif;
 }
 
-h2{
-font-size: 28px;
-font-weight: 50;
-margin-bottom: 5px;
+h2 {
+  margin-bottom : 5px;
+  font-size     : 28px;
+  font-weight   : 50;
 }
-p{
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 100;
+
+p {
+  font-size   : 16px;
+  font-weight : 100;
+  line-height : 19px;
 }
 
 /* GRID */
- .container {
-   margin-right: auto;
-   margin-left: auto;
-   padding-left: 15px;
-   padding-right: 15px;
-   position: relative;
- }
- .container:before,
- .container:after {
-   content: " ";
-   display: table;
- }
- .container:after {
-   clear: both;
- }
- .one-half, .one-third, .one-fourth {
-   width:96%;
-   float:left;
-   position:relative;
-   min-height: 1px;
-   margin:0 2% 20px;
- }
+
+.container {
+  position      : relative;
+  margin-right  : auto;
+  margin-left   : auto;
+  padding-right : 15px;
+  padding-left  : 15px;
+  text-align    : center;
+}
+
+.container:after,
+.container:before {
+  content : " ";
+  display : table;
+}
+
+.container:after {
+  clear : both;
+}
+
+.one-fourth,
+.one-half,
+.one-third {
+  position   : relative;
+  width      : 96%;
+  min-height : 1px;
+  float      : left;
+  margin     : 0 2% 20px;
+}
+
+
+/* Hero Desktop */
+
+
+
+
+
+
+/* Header */
+
+header {
+  color : #000000 background-color:#e1e1e1;
+}
+
+header nav {
+  padding : 1em 0;
+}
+
+header nav ul {
+  display    : inline;
+  padding    : 0;
+  margin     : 0;
+  text-align : right;
+}
+
+header nav ul > li {
+  display         : inline-block;
+  margin          : 0 15px;
+  list-style-type : none;
+}
+
+header nav ul > li.btn-outline {
+  padding       : 10px 15px;
+  border        : 2px solid #31b317;
+  border-radius : 4px;
+}
+
+header nav ul > li.btn-outline:hover {
+  background : #31b317;
+  box-shadow : 0px 2px 0px 0px #b4b4b4;
+}
+
+header nav ul > li > a {
+  color           : #31b317;
+  text-decoration : none;
+}
+
+header nav ul > li.btn-outline:hover > a {
+  color : #ffffff;
+}
+
+header .hero {
+  display    : block;
+  position   : relative;
+  text-align : center;
+}
+
+header .hero h1 {
+  margin      : 95px 0 0;
+  font-size   : 42px;
+  font-weight : normal;
+}
+
+header .hero p {
+  margin      : 10px 0 40px;
+  font-size   : 16px;
+  font-weight : 100;
+  line-height : 26px;
+}
+
+header .hero img {
+  width: 100%;
+  display : block;
+  margin  : 3em auto 0;
+}
+
+
+/* Buttons */
+
+.btn {
+  padding         : 10px 30px;
+  color           : #ffffff;
+  border-radius   : 4px;
+  background      : #31b317;
+  box-shadow      : 0px 2px 0px 0px #b4b4b4;
+  text-decoration : none;
+  font-weight     : 700;
+}
+
+/* BENEFITS */
+
+.benefits {
+  display    : block;
+  position   : relative;
+  text-align : center;
+}
+
+.benefits ul {
+  margin  : 0 auto;
+  padding : 4em 0;
+}
+
+.benefits ul li {
+  display         : inline-block;
+  list-style-type : none;
+}
+
+.benefits i {
+  margin         : 0;
+  color          : #50bce3;
+  vertical-align : middle;
+  font-size      : 60px;
+}
+
+.benefits h2 {
+  color : #50bce3;
+}
+
+/* PRICING */
+
+.pricing {
+  padding         : 4em 0;
+  background      : #e1e1e1;
+  background-size : cover;
+  text-align      : center;
+}
+
+.pricing h2,
+.pricing p {
+  color : #FFFFFF;
+}
+
+.pricing ul {
+  margin  : 0 auto;
+  padding : 2em 0;
+}
+
+.pricing ul li {
+  list-style-type : none;
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 900px;
+    align-items: left;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .header-logo {
+    display: block;
+    float: left;
+
+  }
+  .one-half {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+
+  .one-third {
+    width:29.33333%;
+  }
+
+  .one-fourth {
+    width:21%;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .container {
+    width: 750px;
+    align-items: left;
+  }
+}
+
+@media only screen and (min-width: 750px){
+  .header-logo {
+    display: block;
+    float: left;
+
+  }
+  .one-half {
+    width: 50%;
+    margin: 0;
+  }
+
+  .one-third {
+    width:29.33333%;
+  }
+
+  .one-fourth {
+    width:21%;
+  }
+}
