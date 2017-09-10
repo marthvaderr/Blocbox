@@ -487,13 +487,12 @@ header .hero img {
    list-style-type: none;
    padding: 9px 9px;
  }
- 
- .left-nav .items ul li:active {
-     list-style-type: none;
-     background: #ffffff;
-     border-radius: 4px;
-     padding: 9px 9px;
- }
+
+ .left-nav .active {
+   list-style-type: none;
+   background: #ffffff;
+   border-radius: 4px;
+}
  .left-nav .items ul li a {
    color:#646464;
    text-decoration: none;
@@ -555,8 +554,10 @@ header .hero img {
    padding-top: 5px;
    margin: 0 auto;
  }
- .left-nav .fa-th-large:active{
+ .left-nav .clicked:active{
    background-color: #ffffff;
+   color: #ffffff;
+   cursor: default;
  }
 
  /* CONTENT */
