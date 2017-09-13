@@ -150,6 +150,7 @@ header .hero img {
   margin: 0 auto;
 }
 
+
 /* BENEFITS */
 
 .benefits {
@@ -392,9 +393,8 @@ header .hero img {
 }
  .left-nav {
    height: 100%;
-   width: 280px;
+   width: 300px;
    color:#FFFFFF;
-   background: #34495E;
    background-image: linear-gradient(-269deg, #FAF6F6 0%, #EEEEEE 31%, #D8D8D8 100%);   position: fixed;
    display:block;
    position:absolute;
@@ -407,11 +407,22 @@ header .hero img {
    -o-transform: translate(-280px,0); /** Opera **/
    -moz-transform: translate(-280px,0); /** Firefox **/
     }
+    #left-nav{
+      width: 71%;
+      height: 650px;
+    }
+    .left-nav .site-logo img {
+    margin-left: 65px;
+    width: 150px;
+    }
+    .left-nav .Avatar img {
+      margin-left: 10px;
+      margin-top: 20px;
+    }
     .left-nav.open {
       display:block;
-      width:280px;
-      background: #34495E;
-      background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+      width:71%;
+      background-image: linear-gradient(-269deg, #FAF6F6 0%, #EEEEEE 31%, #D8D8D8 100%);
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
@@ -434,8 +445,17 @@ header .hero img {
       left: 5px;
       top: 15px;
     }
-
+    @media (min-width:700px){
+      #left-nav{
+        width: 30%;
+        height: 100%;
+      }
+    }
     @media (min-width:992px) {
+      #left-nav{
+        width: 16%;
+        height: 100%;
+      }
    .left-nav {
      height: 100vh;
      width:14.66666667%;
@@ -450,6 +470,9 @@ header .hero img {
      -o-transform: translate(0,0); /** Opera **/
      -moz-transform: translate(0,0); /** Firefox **/
    }
+   .left-nav .site-logo img{
+     margin-left: 35px;
+   }
    .left-nav.open {
      width:14.66666667%;
      transform: translate(0,0);
@@ -463,9 +486,13 @@ header .hero img {
  }
 
  .left-nav .site-logo {
-   padding:20px 0;
+   padding-top: 20px;
    display:block;
    text-align: center;
+   width: 16%;
+ }
+ .left-nav a img {
+   width: 160px;
  }
 
  .left-nav .items {
@@ -516,7 +543,7 @@ header .hero img {
    height:35px;
    width:35px;
    border-radius: 50%;
-   margin-left:10px;
+   margin-left:20px;
    display: inline-block;
  }
  .left-nav .settings p {
@@ -535,24 +562,17 @@ header .hero img {
    margin-right:10px;
    margin-top:8px;
  }
-
- .Avatar  {
-   margin: 0 auto;
- }
-
  .left-nav .Avatar img {
      border-radius:50%;
-     height: 60px;
+     height: 70px;
      width: auto;
+     margin-left: 75px;
  }
  .left-nav .Avatar p {
    color:#646464;
    text-decoration: none;
    font-weight: 600;
-   float: right;
-   padding-right: 45px;
-   padding-top: 5px;
-   margin: 0 auto;
+   margin-left: 55px;
  }
  .left-nav .clicked:active{
    background-color: #ffffff;
